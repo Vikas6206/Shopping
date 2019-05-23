@@ -9,9 +9,9 @@ class Product(models.Model):
 
 
 class Offer(models.Model):
-    code= models.CharField(max_length=255)
-    description =models.CharField(max_length=255)
-    discount= models.FloatField()
+    code = models.CharField(max_length=255)
+    description = models.CharField(max_length=255)
+    discount = models.FloatField()
 
 # Create a model class
 # Go to the settings.py and umder installed apps add the path to the product project
@@ -20,6 +20,3 @@ class Offer(models.Model):
 # To manage the migration use the following command
 # python manage.py migrate
 # Use the sqllite tool to import the db.sqlite3 file
-
-
-
